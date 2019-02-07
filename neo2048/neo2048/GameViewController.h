@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import <GameplayKit/GameplayKit.h>
-
 @interface GameViewController : UIViewController
+@property (retain, nonatomic) IBOutletCollection(UILabel) NSArray *gameArray;
 @property (strong, nonatomic) IBOutlet UILabel *sqr00;
 @property (strong, nonatomic) IBOutlet UILabel *sqr10;
 @property (strong, nonatomic) IBOutlet UILabel *sqr20;
@@ -28,5 +28,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *sqr23;
 @property (strong, nonatomic) IBOutlet UILabel *sqr33;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swiper;
+
 
 @end

@@ -40,6 +40,8 @@
         return UIInterfaceOrientationMaskAll;
     }
 }
+- (IBAction)handleSwipey:(id)sender {
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

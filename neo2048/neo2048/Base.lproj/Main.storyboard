@@ -21,13 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XS-RI-rbh" userLabel="00">
-                                <rect key="frame" x="75" y="225" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90792458756458028" green="1" blue="0.70744970271856389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-gU-9OZ" userLabel="01">
                                 <rect key="frame" x="133" y="225" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -91,13 +84,6 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH1-mQ-Fsk">
-                                <rect key="frame" x="191" y="341" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90792458760000005" green="1" blue="0.70744970269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfv-cH-ajV">
                                 <rect key="frame" x="249" y="341" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,15 +91,31 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-wQ-zh2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-wQ-zh2">
                                 <rect key="frame" x="75" y="399" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90792458760000005" green="1" blue="0.70744970269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="chN-WU-8zB"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rF-Mh-FgO">
                                 <rect key="frame" x="133" y="399" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90792458760000005" green="1" blue="0.70744970269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XS-RI-rbh" userLabel="00">
+                                <rect key="frame" x="75" y="225" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90792458756458028" green="1" blue="0.70744970271856389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH1-mQ-Fsk">
+                                <rect key="frame" x="191" y="341" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90792458760000005" green="1" blue="0.70744970269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText"/>
@@ -157,10 +159,30 @@
                         <outlet property="sqr32" destination="Wfv-cH-ajV" id="hQa-3n-KWD"/>
                         <outlet property="sqr33" destination="GsR-4c-Qka" id="n6H-UB-pyo"/>
                         <outlet property="swiper" destination="20Y-IX-75x" id="J0f-3k-8tV"/>
+                        <outletCollection property="gameArray" destination="4XS-RI-rbh" id="zSh-WE-Fu9"/>
+                        <outletCollection property="gameArray" destination="AKR-gU-9OZ" id="PbE-JL-6fB"/>
+                        <outletCollection property="gameArray" destination="u6A-6w-vLN" id="P18-fv-bgu"/>
+                        <outletCollection property="gameArray" destination="1br-PX-Jrb" id="N1M-p7-fnX"/>
+                        <outletCollection property="gameArray" destination="An2-TL-HU0" id="XNJ-Ex-OnZ"/>
+                        <outletCollection property="gameArray" destination="QI7-wQ-zh2" id="4WF-Br-YvN"/>
+                        <outletCollection property="gameArray" destination="RTL-cp-mKW" id="cZI-Yo-E1H"/>
+                        <outletCollection property="gameArray" destination="5SZ-en-iud" id="hh1-Ak-0LI"/>
+                        <outletCollection property="gameArray" destination="fEq-mc-YKK" id="Cmt-rt-F5s"/>
+                        <outletCollection property="gameArray" destination="ms6-Th-PX0" id="MWq-ms-l8E"/>
+                        <outletCollection property="gameArray" destination="4A5-qc-tjS" id="Vtv-UI-dN4"/>
+                        <outletCollection property="gameArray" destination="8rF-Mh-FgO" id="L0z-nl-NSc"/>
+                        <outletCollection property="gameArray" destination="QH1-mQ-Fsk" id="MyA-O1-xu0"/>
+                        <outletCollection property="gameArray" destination="RTO-4Z-MLI" id="rze-5Y-pu3"/>
+                        <outletCollection property="gameArray" destination="Wfv-cH-ajV" id="xzq-c8-pNH"/>
+                        <outletCollection property="gameArray" destination="GsR-4c-Qka" id="VwG-kT-Oya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="20Y-IX-75x"/>
+                <swipeGestureRecognizer direction="right" id="20Y-IX-75x">
+                    <connections>
+                        <action selector="handleSwipey:" destination="BV1-FR-VrT" id="uHC-qJ-EJ8"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="351" y="-429"/>
         </scene>
