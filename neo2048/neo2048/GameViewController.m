@@ -40,7 +40,13 @@
         return UIInterfaceOrientationMaskAll;
     }
 }
-- (IBAction)handleSwipey:(id)sender {
+- (IBAction)handleSwipeU:(id)sender {
+}
+- (IBAction)handleSwipeL:(id)sender {
+}
+- (IBAction)handleSwipeR:(id)sender {
+}
+- (IBAction)handleSwipeD:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {

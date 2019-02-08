@@ -28,6 +28,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *sqr23;
 @property (strong, nonatomic) IBOutlet UILabel *sqr33;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swiper;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipel;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeu;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swiped;
 
 
 @end
