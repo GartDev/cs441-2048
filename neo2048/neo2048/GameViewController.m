@@ -10,7 +10,7 @@
 #import "GameScene.h"
 
 @implementation GameViewController
-
+int count =0;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -41,6 +41,11 @@
     }
 }
 - (IBAction)handleSwipeU:(id)sender {
+    for(UILabel *tile in self.gameArray){
+        count++;
+        NSString *strcount=[NSString stringWithFormat:@"%d",count];
+        tile.text = strcount;
+    }
 }
 - (IBAction)handleSwipeL:(id)sender {
 }
