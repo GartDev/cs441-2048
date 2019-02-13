@@ -27,9 +27,11 @@
     
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
+    _gamewin.text = @"";
     for(UILabel *tile in self.gameArray){
-        tile.text = @"2";
+        tile.text = @"0";
     }
+    [self generateTiles];
 }
 
 - (BOOL)shouldAutorotate {
@@ -44,6 +46,8 @@
     }
 }
 - (IBAction)handleUp:(id)sender {
+    
+    [self generateTiles];
     for(int i = 4; i<=15; i++){
         UILabel *tile = [_gameArray objectAtIndex: i];
         UILabel *tileAbove = [_gameArray objectAtIndex: i-4];
@@ -51,7 +55,7 @@
             int new = tileAbove.text.intValue * 2;
             tileAbove.text = [NSString stringWithFormat:@"%d",new];
             tile.text = @"0";
-        }else if(tileAbove == 0){
+        }else if(tileAbove == @"0"){
             int new = tile.text.intValue;
             tileAbove.text = [NSString stringWithFormat:@"%d",new];
             tile.text = @"0";
@@ -66,9 +70,12 @@
             tile.text = @"0";
         }
     }
+    [self checkWin];
 
 }
 - (IBAction)handleRight:(id)sender {
+    
+    [self generateTiles];
     for (int i = 2; i>=0;i--){
         for(int j = 0; j<= 3; j++){
             int indy = i + (4*j);
@@ -97,8 +104,10 @@
             }
         }
     }
+    [self checkWin];
 }
 - (IBAction)handleDown:(id)sender {
+    [self generateTiles];
     for(int i = 11; i>=0; i--){
         UILabel *tile = [_gameArray objectAtIndex: i];
         UILabel *tileBelow = [_gameArray objectAtIndex: i+4];
@@ -106,7 +115,7 @@
             int new = tileBelow.text.intValue * 2;
             tileBelow.text = [NSString stringWithFormat:@"%d",new];
             tile.text = @"0";
-        }else if(tileBelow == 0){
+        }else if(tileBelow == @"0"){
             int new = tile.text.intValue;
             tileBelow.text = [NSString stringWithFormat:@"%d",new];
             tile.text = @"0";
@@ -121,9 +130,12 @@
             tile.text = @"0";
         }
     }
+    [self checkWin];
 }
 - (IBAction)handleLeft:(id)sender {
-    for (int i = 1; i>=3;i++){
+    
+    [self generateTiles];
+    for (int i = 1; i<=3;i++){
         for(int j = 0; j<= 3; j++){
             int indy = i + (4*j);
             UILabel *tile = [_gameArray objectAtIndex: indy];
@@ -151,6 +163,7 @@
             }
         }
     }
+    [self checkWin];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -160,6 +173,24 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+-(void)generateTiles{
+    bool added = false;
+    while(!added){
+    int r = arc4random_uniform(15);
+        UILabel *tile = [_gameArray objectAtIndex: r];
+        if(tile.text == @"0"){
+            tile.text = @"2";
+            added = true;
+        }
+    }
+}
+-(void)checkWin{
+    for(UILabel *tile in self.gameArray){
+        if(tile.text == @"2048"){
+            _gamewin.text = @"you win!";
+        }
+    }
 }
 
 @end

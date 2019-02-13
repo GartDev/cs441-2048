@@ -10,6 +10,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import <GameplayKit/GameplayKit.h>
 @interface GameViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *gamewin;
 @property (retain, nonatomic) IBOutletCollection(UILabel) NSArray *gameArray;
 @property (strong, nonatomic) IBOutlet UILabel *Sqr00;
 @property (strong, nonatomic) IBOutlet UILabel *Sqr10;

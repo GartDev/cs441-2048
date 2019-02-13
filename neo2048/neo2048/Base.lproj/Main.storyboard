@@ -157,6 +157,13 @@
                                     <action selector="handleDown:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Yxj-y3-eJi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09h-Wc-BfT">
+                                <rect key="frame" x="167" y="83" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJd-Jy-iag">
                                 <rect key="frame" x="167" y="525" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -187,6 +194,7 @@
                         <outlet property="Sqr32" destination="Wfv-cH-ajV" id="OCx-yi-6mK"/>
                         <outlet property="Sqr33" destination="GsR-4c-Qka" id="Ip4-UV-Nda"/>
                         <outlet property="dbutton" destination="UPJ-Cy-8eb" id="Qq5-X4-rct"/>
+                        <outlet property="gamewin" destination="09h-Wc-BfT" id="vmF-k6-DML"/>
                         <outlet property="lbutton" destination="Gvs-wc-NwR" id="mrA-uJ-QGU"/>
                         <outlet property="rbutton" destination="T0C-Ey-stg" id="bVX-ae-Nin"/>
                         <outlet property="ubutton" destination="yJd-Jy-iag" id="ite-EB-WXf"/>
