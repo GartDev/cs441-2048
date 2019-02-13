@@ -1,0 +1,45 @@
+int size;
+array gameArray
+for(tile in array){
+    tile.setText = "0";
+}
+goRight (for left just make i go from 1 to 3, and then 2 to 1, check index -1 instead of +1)
+for(int i = 2; i>=0; i-- ){
+    for(int j = 0; j <= 3; j++){
+        index = i + (4*j);
+        if(gameArray[index+1] == gameArray[index]){
+            gameArray[index+1] = gameArray[index] * 2
+            gameArray[index] = 0
+        }else if (gameArray[index+1] == 0){
+            gameArray[index+1] = val
+            gameArray[index] = 0
+        }else{
+
+        }
+    }
+}
+for(int i = 1; i<=2; i++){
+    for(int j = 0; j<=3; j++){
+        index = i + (4*j);
+        if(gameArray[index+1] == 0){
+            gameArray[index+1] = gameArray[index];
+            gameArray[index] = 0
+        }
+    }
+}
+goUp(For down, iterate from 15 to 4, and 4 to 11, change i-4 to i+4)
+for(int i = 4; i <= 15; i++){
+    if(gameArray[i-4] == gameArray[i]){
+        gameArray[i-4] = gameArray[i] * 2
+        gameArray[i] = 0
+    }else if(gameArray[i-4] == 0){
+        gameArray[i-4] = gameArray[i] * 2
+        gameArray[i] = 0
+    }
+}
+for(int i = 11; i>= 4; i++){
+    if(gameArray[i-4] == 0){
+       gameArray[i-4] = gameArray[i] * 2
+       gameArray[i] = 0
+       }
+}
