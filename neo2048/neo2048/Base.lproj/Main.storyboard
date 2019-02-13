@@ -133,15 +133,41 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0C-Ey-stg">
+                                <rect key="frame" x="198" y="556" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="handleRight:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gVV-Da-b7l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvs-wc-NwR">
+                                <rect key="frame" x="141" y="556" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="handleLeft:" destination="BV1-FR-VrT" eventType="touchUpInside" id="PEv-lD-4QX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPJ-Cy-8eb">
+                                <rect key="frame" x="163" y="583" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Down"/>
+                                <connections>
+                                    <action selector="handleDown:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Yxj-y3-eJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJd-Jy-iag">
+                                <rect key="frame" x="167" y="525" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Up"/>
+                                <connections>
+                                    <action selector="handleUp:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0R9-ZX-0pU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="20Y-IX-75x" appends="YES" id="YC1-8f-Npt"/>
-                            <outletCollection property="gestureRecognizers" destination="YDj-al-HRN" appends="YES" id="uM8-RT-3vY"/>
-                            <outletCollection property="gestureRecognizers" destination="khG-pO-GrP" appends="YES" id="svc-zm-but"/>
-                            <outletCollection property="gestureRecognizers" destination="OEk-Ut-wEg" appends="YES" id="cDA-hh-XLY"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="Sqr00" destination="4XS-RI-rbh" id="ycf-OJ-pGj"/>
@@ -160,10 +186,10 @@
                         <outlet property="Sqr31" destination="ms6-Th-PX0" id="6LY-ci-4vZ"/>
                         <outlet property="Sqr32" destination="Wfv-cH-ajV" id="OCx-yi-6mK"/>
                         <outlet property="Sqr33" destination="GsR-4c-Qka" id="Ip4-UV-Nda"/>
-                        <outlet property="swiped" destination="OEk-Ut-wEg" id="qsU-i6-djd"/>
-                        <outlet property="swipel" destination="YDj-al-HRN" id="ChB-ar-yci"/>
-                        <outlet property="swiper" destination="20Y-IX-75x" id="J0f-3k-8tV"/>
-                        <outlet property="swipeu" destination="khG-pO-GrP" id="8d1-lN-lJe"/>
+                        <outlet property="dbutton" destination="UPJ-Cy-8eb" id="Qq5-X4-rct"/>
+                        <outlet property="lbutton" destination="Gvs-wc-NwR" id="mrA-uJ-QGU"/>
+                        <outlet property="rbutton" destination="T0C-Ey-stg" id="bVX-ae-Nin"/>
+                        <outlet property="ubutton" destination="yJd-Jy-iag" id="ite-EB-WXf"/>
                         <outletCollection property="gameArray" destination="4XS-RI-rbh" id="Jey-MA-lCZ"/>
                         <outletCollection property="gameArray" destination="AKR-gU-9OZ" id="LJf-oK-2M9"/>
                         <outletCollection property="gameArray" destination="RTL-cp-mKW" id="Cw4-it-HSd"/>
@@ -183,26 +209,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="20Y-IX-75x">
-                    <connections>
-                        <action selector="handleSwipey:" destination="BV1-FR-VrT" id="uHC-qJ-EJ8"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="YDj-al-HRN" userLabel="Swipel">
-                    <connections>
-                        <action selector="handleSwipel:" destination="BV1-FR-VrT" id="QPg-L7-feE"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="khG-pO-GrP" userLabel="Swipeu">
-                    <connections>
-                        <action selector="handleSwipeU:" destination="BV1-FR-VrT" id="llJ-Bk-bgg"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="down" id="OEk-Ut-wEg" userLabel="Swiped">
-                    <connections>
-                        <action selector="handleSwipeD:" destination="BV1-FR-VrT" id="5cN-Ng-Oca"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="351" y="-429"/>
         </scene>
