@@ -10,7 +10,11 @@
 #import "GameScene.h"
 
 @implementation GameViewController
-int count =0;
+-(void)initialize{
+    for(UILabel *tile in self.gameArray){
+        tile.text = @"0";
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -41,10 +45,9 @@ int count =0;
     }
 }
 - (IBAction)handleSwipeU:(id)sender {
-    for(UILabel *tile in self.gameArray){
-        count++;
-        NSString *strcount=[NSString stringWithFormat:@"%d",count];
-        tile.text = strcount;
+    for(int i = 4; i<=15; i++){
+        UILabel *tile = [_gameArray objectAtIndex: i];
+        
     }
 }
 - (IBAction)handleSwipeL:(id)sender {
